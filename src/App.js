@@ -6,6 +6,9 @@ import axios from 'axios';
 import './App.css';
 
 function App() {
+  const clientSecret = process.env.REACT_APP_CLIENT_SEC;
+  const clientId = process.env.REACT_APP_CLIENT_ID;
+
   const [token, setToken] = useState('');
   const [genres, setGenres] = useState({
     selectedGenre: '',
